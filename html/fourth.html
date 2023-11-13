@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinatory</title>
+    <link href="/grid/comb/css/main4.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ol>
+                <li class="nav"><a href="first.html">Сочетание</a></li>
+                <li class="nav"><a href="second.html">Размещение</a></li>
+                <li class="nav"><a href="third.html">Размещение</a></li>
+                <li class="nav">Урновая модель</li>
+                <li class="nav"><a href="fifth.html">Факториал</a></li>
+            </ol>
+          </nav>
+        <div class="name-abs">
+            <h1>Урновая модель</h1>
+        </div>
+        <div class="comb1">
+            <h3 style="text-align: center;">Среди n предметов, имеется m меченых. Наугад достается k предметов. Вероятность того, что все извлеченные - меченые</h3>
+            <div class="numbers">
+                <input type="text" id="n" value="n"/>
+                <input type="text" id="k" value="k"/>
+                <input type="text" id="m" value="m"/>
+            </div>
+            <div class="buttons" style="text-align: center;">
+                <button onclick="f()">Рассчитать</button>
+                <button onclick="clearall()">Очистить форму</button>
+            </div>
+            <div class="result">
+                <h3 style="text-align: center;" id="res"></h3>
+                <p id="resultText" style="text-align: center;"></p>
+            </div>
+        </div>
+        <hr />
+        <div class="comb2">
+            <h3 style="text-align: center;">Среди n предметов, имеется m меченых. Наугад достается k предметов. Вероятность того, что из извлеченных - ровно r меченых</h3>
+            <div class="numbers">
+                <input type="text" id="n2" value="n"/>
+                <input type="text" id="k2" value="k"/>
+                <input type="text" id="m2" value="m"/>
+                <input type="text" id="r2" value="r"
+            </div>
+            <div class="buttons" style="text-align: center;">
+                <button onclick="f2()">Рассчитать</button>
+                <button onclick="clearall2()">Очистить форму</button>
+            </div>
+            <div class="result">
+                <h3 style="text-align: center;" id="res2"></h3>
+                <p id="resultText2" style="text-align: center;"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/grid/comb/js/f4.js"></script>
+</body>
+</html>

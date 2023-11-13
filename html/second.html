@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinatory</title>
+    <link href="/grid/comb/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ol>
+                <li class="nav"><a href="first.html">Сочетание</a></li>
+              <li class="nav">Размещение</li>
+              <li class="nav"><a href="third.html">Перестановки</a></li>
+              <li class="nav"><a href="fourth.html">Урновая модель</a></li>
+              <li class="nav"><a href="fifth.html">Факториал</a></li>
+            </ol>
+          </nav>
+        <div class="name-abs">
+            <h1>Размещения</h1>
+        </div>
+        <div class="comb1">
+            <h2 style="text-align: center;">Размещения без повторений</h2>
+            <div class="name1">
+                <h1 class="big-c">A</h1>
+                <div class="text-container">
+                <input type="text" id="count" value="k"/>
+                <input type="text" id="n" value="n">
+                </div>
+            </div>
+            
+            <div class="buttons" style="text-align: center;">
+                <button onclick="f_p()">Рассчитать</button>
+                <button onclick="clearall()">Очистить форму</button>
+            </div>
+            <div class="result">
+                <h3 style="text-align: center;" id="res"></h3>
+                <p id="resultText"></p>
+            </div>
+        </div>
+        <hr />
+        <div class="comb2">
+            <h2 style="text-align: center;">Размещения с повторениями</h2>
+            <div class="name1">
+                <h1 class="big-c">A</h1>
+                <div class="text-container">
+                <input type="text" id="count2" value="k"/>
+                <input type="text" id="n2" value="n">
+                </div>
+            </div>
+            
+            <div class="buttons" style="text-align: center;">
+                <button onclick="f_p2()">Рассчитать</button>
+                <button onclick="clearall()">Очистить форму</button>
+            </div>
+            <div class="result">
+                <h3 style="text-align: center;" id="res2"></h3>
+                <p id="resultText2"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/grid/comb/js/f.js"></script>
+</body>
+</html>
